@@ -2,7 +2,7 @@
 <html lang="ca">
 <head>
         <meta charset="utf-8">
-        <title>CÀLCUL DEL PREU DEL PARTIT SELECCIONAT</title>
+        <title>CÀLCULa DEL PREU DEL PARTIT SELECCIONAT</title>
 </head>
         <body>
                 <p><u>CÀLCUL DEL PREU DEL PARTIT SELECCIONAT</u></p>

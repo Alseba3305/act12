@@ -1,0 +1,27 @@
+services:
+  sPartit:
+    image: preus:1.0
+    build: .
+    expose:
+      - "80"
+    environment:
+      - HOST_NAME=pj9f4a12-alseba.clotfje.net
+    networks:
+      - xPj9f4a13
+
+  sDc:
+    image: nginx:latest
+    container_name: cNginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - sPartit
+    ports:
+      - "80:8000"
+    networks:
+      - xPj9f4a13
+
+networks:
+  xPj9f4a13:
+    name: pj9f4a13
+    driver: bridge
